@@ -18,8 +18,8 @@ This project has four pages:
 To do this exercise, I used some technologies such as:
 
 - ExpressJS;
-  -JavaScript;
-  -HTML;
+- JavaScript;
+- HTML;
 - css;
 
 ---
