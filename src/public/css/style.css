@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #cfcfcf;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #0a1027;
+  font-family: sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0e091b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2647ca;
+  border-radius: 6px;
+}
+
+input,
+button,
+textarea {
+  border: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #3555d3;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #3555d39c;
+  display: block;
+  font-size: 1.3rem;
+  padding: 8px 20px;
+}
+
+button:hover {
+  background-color: #405fda;
+  box-shadow: 0 0 5px #3555d39c;
+}
+
+p {
+  line-height: 24px;
+}
+
+.paragraph-head {
+  color: #ea701a;
+  margin-bottom: -10px;
+}
+
+h1 {
+  font-size: 5.6rem;
+}
+
+h2 {
+  font-size: 2.6em;
+}
+
+h3 {
+  font-size: 2.3em;
+  margin-bottom: 30px;
+  color: #405fda;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.7em;
+}
+
+h6 {
+  font-size: 1.3em;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2.6em;
+  color: #405fda;
+}
+
+h2::after {
+  content: ".";
+  font-size: 3.154rem;
+  color: #ea701a;
+}
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.grid-layout {
+  display: grid;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex-layout {
+  display: flex;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  background-color: #0a102775;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(207, 207, 207, 0.2);
+
+  display: flex;
+  align-items: center;
+}
+
+header .flex-layout {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between !important;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li>a {
+  margin: 0 10px;
+  text-transform: uppercase;
+  color: rgb(207, 207, 207) !important;
+}
+
+nav li>a:hover {
+  color: #ffffff !important;
+}
+
+#s-sobre,
+#s-banner {
+  width: 100%;
+  height: 665px;
+}
+
+#s-banner {
+  width: 100%;
+  height: 665px;
+  background-image: url('/img/banner.png');
+  object-fit: cover;
+  background-size: cover;
+
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#s-banner h3 {
+  color: #ea701a;
+  line-height: 50px;
+}
+
+#s-banner h3::after {
+  content: ".";
+  color: #cfcfcf;
+}
+
+#s-sobre p {
+  width: 80%;
+  margin-bottom: 18px;
+}
+
+.layout-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.layout-sobre img {
+  max-width: 500px;
+}
+
+#s-servicos {
+  padding: 100px 0;
+  background-color: #3555d310;
+}
+
+#s-servicos h3,
+#s-equipe h3 {
+  text-align: center;
+}
+
+.service-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-service {
+  width: 80px;
+}
+
+.card {
+  max-width: 275px;
+  padding: 50px 10px;
+  background-color: #3555d34b;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 5px 15px #0a1027;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.card h6,
+.card a {
+  margin: 15px 0;
+}
+
+.card a:hover {
+  color: #ea701a;
+}
+
+#s-equipe {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.our-team {
+  gap: 32px;
+}
+
+.person-team {
+  width: 300px;
+  height: 400px;
+  text-align: center;
+}
+
+.person-team img {
+  border-radius: 30px 30px 0 0;
+}
+
+.person-team h6,
+.person-team img {
+  margin-bottom: 15px;
+}
+
+.contacto-layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.contacto-layout img {
+  max-width: 500px;
+}
+
+form input,
+textarea,
+form button {
+  border: 1.5px solid #3555d3;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+form input,
+textarea {
+  background-color: #3555d310;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #3555d3;
+}

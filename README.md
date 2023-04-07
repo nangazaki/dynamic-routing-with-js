@@ -24,7 +24,7 @@ To do this exercise, I used some technologies such as:
 
 ---
 
-## :hammer_and_wrench: Motivations
+## :muscle: Motivations
 
 I decided to do this exercise when I was studying React Fundamentals. I asked myself: "How does React work behind the scenes?"... So I thought of doing something similar.
 
